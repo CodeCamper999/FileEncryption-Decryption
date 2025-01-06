@@ -49,14 +49,14 @@ def EncryptData():
             print("Now stoping...")
             exit()
         
-        RangeOfNUm = list(range(1))     
+            
         with open("DecryptionKey.txt", "r") as SeekKey:
             
                     
             Getline = SeekKey.readlines()
                     
-            for readlines in RangeOfNUm:
-                TrueKey = ", ".join(Getline)
+            
+            TrueKey = ", ".join(Getline)
                         
         FileDecrypt = input("Please enter the file you would like to decrypt?: ")
         IsFile = os.path.isfile(FileDecrypt)
